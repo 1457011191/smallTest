@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo HTML</title>
+</head>
+<body>
+<table>
+    <thead>
+    <td>课程号</td>
+    <td>课程名</td>
+    <td>教师</td>
+    </thead>
+
+    <tbody>
+    <tr th:each="course:${courseList}">
+        <td th:text="${course.courseNo}"/>
+        <td th:text="${course.getCourseName}"/>
+        <td th:text="${course.getTeacherNo}"/>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+com\hand\springbootMybatis\entity\Course.class
+com\hand\springbootMybatis\entity\Student.class
+com\hand\springbootMybatis\entity\Teacher.class
+com\hand\springbootMybatis\entity\StudentCore.class
+com\hand\springbootMybatis\service\CourseService.class
+com\hand\springbootMybatis\entity\TeacherEmp.class
+com\hand\springbootMybatis\service\impl\CourseServiceImpl.class
+com\hand\springbootMybatis\Controller\CourseController.class
+com\hand\springbootMybatis\SpringbootMybatisApplication.class
+com\hand\springbootMybatis\mapper\CourseXmlMapper.class

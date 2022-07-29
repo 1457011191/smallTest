@@ -20,7 +20,6 @@ public class ThymeleafController {
         List<Course> courses = courseService.listAll();
         System.out.println(courses);
         model.addAttribute("courseList",courses);
-
         return "demo/demoHtm";
     }
 }

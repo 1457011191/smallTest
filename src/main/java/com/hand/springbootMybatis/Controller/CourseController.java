@@ -32,7 +32,7 @@ public class CourseController {
         return mse;
     }
 
-    //也可以这么传参   /course/delete?courseNo=c900
+//    也可以这么传参   /course/delete?courseNo=c900    瞎打&&&&&
 //    @GetMapping("/delete")
 //    public String delete(String courseNo){
 //        String mse;

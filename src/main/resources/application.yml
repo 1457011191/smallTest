@@ -17,9 +17,10 @@ spring:
     servlet:
       content-type: text/html
 
-#mybatis
-mybatis:
-  mapper-locations: classpath:mapper/*.xml #mapper映射文件路径
-  type-aliases-package: com/hand/springbootMybatis/entity  #映射实体类的路径包
+#mybatis  也可以用扫描绑定  mappper和mapper.xml @MapperScan("com.hand.*.mapper")
+  #(扫描注意：要包结构一至，target里会把他俩合到一起，并且名字要一样)
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml #mapper映射文件路径
+#  type-aliases-package: com/hand/springbootMybatis/entity  #映射实体类的路径包
 
 

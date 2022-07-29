@@ -1,7 +1,7 @@
 package com.hand.springbootMybatis;
 
 import com.hand.springbootMybatis.entity.Course;
-import com.hand.springbootMybatis.mapper.CourseXmlMapper;
+import com.hand.springbootMybatis.mapper.CourseMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,7 +11,7 @@ import java.util.List;
 @SpringBootTest
 class SpringbootMybatisApplicationTests {
     @Autowired
-    private CourseXmlMapper courseXmlMapper;
+    private CourseMapper courseXmlMapper;
     //    查询
     @Test
     public void test4 (){

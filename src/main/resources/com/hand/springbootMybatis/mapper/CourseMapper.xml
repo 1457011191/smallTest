@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.hand.springbootMybatis.mapper.CourseXmlMapper">
+<mapper namespace="com.hand.springbootMybatis.mapper.CourseMapper">
     <resultMap id="BaseResultMap" type="com.hand.springbootMybatis.entity.Course">
         <result column="COURSE_NAME" property="courseName" />
         <result column="COURSE_NO" property="courseNo" />

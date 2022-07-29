@@ -1,7 +1,7 @@
 package com.hand.springbootMybatis.service.impl;
 
 import com.hand.springbootMybatis.entity.Course;
-import com.hand.springbootMybatis.mapper.CourseXmlMapper;
+import com.hand.springbootMybatis.mapper.CourseMapper;
 import com.hand.springbootMybatis.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,40 +11,40 @@ import java.util.List;
 @Service
 public class CourseServiceImpl implements CourseService {
     @Autowired
-    private CourseXmlMapper courseXmlMapper;
+    private CourseMapper courseMapper;
 
     @Override
     public List<Course> listAll() {
-        return courseXmlMapper.listAll();
+        return courseMapper.listAll();
     }
 
     @Override
     public Course getById(String courseNo) {
-        return courseXmlMapper.getById(courseNo);
+        return courseMapper.getById(courseNo);
     }
 
     @Override
     public int insert(Course course) {
-        return courseXmlMapper.insert(course);
+        return courseMapper.insert(course);
     }
 
     @Override
     public int insertIgnoreNull(Course course) {
-        return courseXmlMapper.insertIgnoreNull(course);
+        return courseMapper.insertIgnoreNull(course);
     }
 
     @Override
     public int update(Course course) {
-        return courseXmlMapper.update(course);
+        return courseMapper.update(course);
     }
 
     @Override
     public int updateIgnoreNull(Course course) {
-        return courseXmlMapper.updateIgnoreNull(course);
+        return courseMapper.updateIgnoreNull(course);
     }
 
     @Override
     public int delete(String courseNo) {
-        return courseXmlMapper.delete(courseNo);
+        return courseMapper.delete(courseNo);
     }
 }

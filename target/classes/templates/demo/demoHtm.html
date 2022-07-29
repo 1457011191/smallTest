@@ -11,15 +11,13 @@
     <td>课程名</td>
     <td>教师</td>
     </thead>
-
     <tbody>
     <tr th:each="course:${courseList}">
-        <td th:text="${course.courseNo}"/>
+        <td th:text="${course.getCourseNo}"/>
         <td th:text="${course.getCourseName}"/>
         <td th:text="${course.getTeacherNo}"/>
     </tr>
     </tbody>
-
 </table>
 </body>
 </html>
